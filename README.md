@@ -1,60 +1,81 @@
 # 🍽️ Caterers Management System
 
-A web-based **Caterers Management System** developed using **ASP.NET Framework** and **SQL Server**. The application helps catering businesses manage customers, catering packages, bookings, payments, ratings, and feedback through an easy-to-use interface.
+A web-based **Caterers Management System** developed using **ASP.NET MVC 5 (.NET Framework)** and **SQL Server**. This application streamlines catering business operations by managing customers, catering packages, event bookings, payments, ratings, and customer feedback through a user-friendly interface.
 
 ---
 
-## 📖 Overview
+# 📖 Project Overview
 
-The Caterers Management System is designed to simplify the daily operations of a catering business. It enables customers to browse catering packages, make online bookings, and provide ratings and feedback after events. Administrators can efficiently manage packages, bookings, customers, payments, and reports from a centralized dashboard.
+The Caterers Management System is designed to digitize and simplify the management of catering services. Customers can browse available catering packages, book services for events, submit ratings and feedback, and manage their bookings. Administrators can efficiently handle packages, customers, bookings, payments, and reports from a centralized dashboard.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 👤 Customer Module
-- Customer Registration and Login
+## 👤 Customer Module
+
+- Customer Registration
+- Secure Login & Logout
 - View Catering Packages
 - Book Catering Services
 - View Booking History
-- Submit Ratings and Feedback
-- Update Profile
+- Submit Ratings & Feedback
+- Update Customer Profile
 
-### 👨‍💼 Admin Module
-- Secure Admin Login
-- Dashboard Overview
+---
+
+## 👨‍💼 Admin Module
+
+- Admin Login
+- Dashboard
 - Manage Customers
 - Manage Catering Packages
 - Manage Bookings
 - Manage Payments
-- View Customer Ratings & Feedback
+- View Customer Feedback
 - Generate Reports
 
-### 🍴 Package Management
+---
+
+## 🍽️ Catering Package Management
+
 - Add New Packages
-- Edit Package Details
+- Update Package Details
 - Delete Packages
-- Set Package Price
+- Package Pricing
 - Upload Package Images
 
-### 📅 Booking Management
+---
+
+## 📅 Booking Management
+
 - Online Booking
-- Booking Status Management
 - Event Date Scheduling
 - Booking Confirmation
+- Booking Status Management
 
-### 💳 Payment Management
+---
+
+## 💳 Payment Management
+
 - Record Payments
-- View Payment History
+- Payment History
 - Payment Status Tracking
 
-### ⭐ Rating & Feedback
+---
+
+## ⭐ Rating & Feedback
+
 - 5-Star Rating System
 - Customer Reviews
 - View Average Ratings
-- Improve Service Quality Through Feedback
+- Customer Suggestions
+- Improve Service Quality
 
-### 📊 Reports
+---
+
+## 📊 Reports
+
 - Customer Report
 - Booking Report
 - Payment Report
@@ -62,23 +83,28 @@ The Caterers Management System is designed to simplify the daily operations of a
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-### Frontend
+## Frontend
+
 - HTML5
 - CSS3
 - Bootstrap
 - JavaScript
 - jQuery
 
-### Backend
-- ASP.NET Framework (MVC)
+## Backend
+
+- ASP.NET MVC 5
 - C#
+- .NET Framework
 
-### Database
-- SQL Server
+## Database
 
-### Tools
+- Microsoft SQL Server
+
+## Development Tools
+
 - Visual Studio
 - SQL Server Management Studio (SSMS)
 - Git
@@ -86,61 +112,88 @@ The Caterers Management System is designed to simplify the daily operations of a
 
 ---
 
-## 💻 System Requirements
+# 💻 Software Requirements
 
-- Windows 10/11
-- Visual Studio
-- SQL Server
-- .NET Framework
+- Windows 10 / Windows 11
+- Visual Studio 2019/2022
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- .NET Framework 4.7.2 or above
 - IIS Express
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 CaterersManagementSystem
 │
-├── Controllers
-├── Models
-├── Views
-├── Scripts
 ├── Content
+├── Scripts
 ├── Images
-├── App_Data
-├── SQL Database
-└── Web.config
+├── Database
+├── Packages
+├── Web.config
+├── Global.asax
+├── README.md
+└── Solution Files
 ```
 
----
+# 🚀 Installation
 
-## 🚀 Installation
+### Step 1
 
-1. Clone the repository
+Clone the repository
 
-```
+```bash
 git clone https://github.com/your-username/CaterersManagementSystem.git
 ```
 
-2. Open the project in Visual Studio.
+### Step 2
 
-3. Restore NuGet packages.
+Open the project in **Visual Studio**.
 
-4. Create the SQL Server database.
+### Step 3
 
-5. Update the connection string in `Web.config`.
+Restore NuGet Packages.
 
-6. Run the SQL script to create tables.
+### Step 4
 
-7. Press **F5** to start the application.
+Create a SQL Server Database.
+
+### Step 5
+
+Import the provided SQL file.
+
+### Step 6
+
+Update the SQL Server Connection String in **Web.config**.
+
+Example:
+
+```xml
+<connectionStrings>
+  <add name="DefaultConnection"
+       connectionString="Data Source=.;Initial Catalog=CaterersDB;Integrated Security=True"
+       providerName="System.Data.SqlClient"/>
+</connectionStrings>
+```
+
+### Step 7
+
+Build the solution.
+
+### Step 8
+
+Press **F5** or click **Start** to run the application.
 
 ---
 
-## 📌 Main Modules
+# 📌 Main Modules
 
 - Customer Management
 - Admin Management
-- Package Management
+- Catering Package Management
 - Booking Management
 - Payment Management
 - Rating & Feedback Management
@@ -148,69 +201,88 @@ git clone https://github.com/your-username/CaterersManagementSystem.git
 
 ---
 
-## 📷 Screenshots
+# 📷 Screenshots
 
-Add screenshots here.
+Add screenshots of your application here.
 
 Example:
 
 - Home Page
-- Login Page
-- Admin Dashboard
+- Customer Login
+- Admin Login
+- Dashboard
 - Package List
 - Booking Page
+- Payment Page
 - Feedback Page
 
 ---
 
-## 🔒 Future Enhancements
+# 🔒 Future Enhancements
 
 - Online Payment Gateway
 - Email Notifications
 - SMS Notifications
 - Invoice Generation
-- Mobile Responsive Design
-- QR Code Booking
+- QR Code for Booking
 - Multi-Admin Support
 - Analytics Dashboard
+- Mobile Responsive UI
 
 ---
 
-## 🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
-This project helped me gain practical experience in:
+This project helped me improve my knowledge of:
 
-- ASP.NET Framework MVC
+- ASP.NET MVC 5
 - C#
+- .NET Framework
 - SQL Server
 - CRUD Operations
-- Authentication & Authorization
-- Database Design
 - MVC Architecture
+- Entity Relationship Design
+- Authentication & Authorization
 - Bootstrap
 - jQuery
 - Git & GitHub
 
 ---
 
-## 👨‍💻 Author
+# 📄 Project Highlights
 
-**Your Name**
+- Web-based application
+- User-friendly interface
+- Secure authentication
+- Efficient booking management
+- Customer rating & feedback
+- Responsive design
+- SQL Server database integration
+
+---
+
+# 👨‍💻 Author
+
+**Ayudh Trivedi**
 
 B.Tech Student
 
-Passionate about Web Development and Software Engineering.
+Passionate about ASP.NET Development and Web Technologies.
 
-GitHub: https://github.com/your-username
+GitHub:
+https://github.com/your-username
 
-LinkedIn: https://linkedin.com/in/your-profile
-
----
-
-## 📜 License
-
-This project is developed for educational and learning purposes.
+LinkedIn:
+https://linkedin.com/in/your-profile
 
 ---
 
-⭐ If you like this project, don't forget to star the repository!
+# 📜 License
+
+This project is developed for educational and learning purposes only.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a **Star ⭐** on GitHub.
